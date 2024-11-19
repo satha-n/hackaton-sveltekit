@@ -1,0 +1,7 @@
+{
+	"/(protected)": [],
+	"/": [],
+	"/callback": [
+		"src/routes/callback/+server.ts"
+	]
+}
