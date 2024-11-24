@@ -7,11 +7,11 @@
     <div class="list">
         {#each _data as item}
         <div class="list-item">
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <h4>{item.status}</h4>
-            <h4>{item.date}</h4>
-            <a class="list-button" href={"/" + item.guid} aria-label="Go next"></a>
+            <h2>{item.formName}</h2>
+            <p>{item.formDescription}</p>
+            <h4>{item.formStatus}</h4>
+            <h4>{item.formDate}</h4>
+            <a class="list-button" href={"/" + item.formId} aria-label="Go next"></a>
         </div>
         {/each}
     </div>

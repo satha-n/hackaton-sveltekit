@@ -33,7 +33,6 @@ declare global {
 		formDescription: string;
 		formStatus: number;
 		formDate: string;
-		assignedSection: number;
 		form: FormSection[];
 	}
 }

@@ -2,7 +2,7 @@ export function formBuilder(data: Form): string {
     let html = '';
 
     data.form.forEach(section => {
-        html += `<div class="section" id="section-${section.section}">`;
+        html += `<div class="section ${section.status === 1 ? "assigned" : ""}" id="section-${section.section}">`;
         html += `<h2>Section ${section.section}</h2>`;
 
         section.fields.forEach(field => {

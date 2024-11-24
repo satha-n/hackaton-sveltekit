@@ -5,11 +5,10 @@ export const transactions: Form[] = [
         formDescription: "Rapport d'accident", // description
         formStatus: 0, // status 0: À signer, 1: Signé, 2: En attente
         formDate: '2021-09-01', // date
-        assignedSection: 2, // section que le user qui request doit remplir
         form: [
             {
                 section: 1, // section du formulaire
-                status: 0, // status 0: Pas touche, 1: Assigné
+                status: 0, // status 0: Pas touche, 1: Assigné, 2: Signé, 3: En attente
                 fields: [
                     {fieldId: 1, fr: 'Nom', en: 'Last Name', fieldStatus: 0, type: 'LASTNAME', fieldType: "input", fieldPrefill: 'John Doe', fieldRequired: true},
                     {fieldId: 2, fr: 'Prénom', en: 'First Name', fieldStatus: 0, type: 'FIRSTNAME', fieldType: "input", fieldPrefill: 'John Doe', fieldRequired: true},
@@ -35,7 +34,6 @@ export const transactions: Form[] = [
         formDescription: "Rapport d'accident", // description
         formStatus: 0, // status 0: À signer, 1: Signé, 2: En attente
         formDate: '2021-09-01', // date
-        assignedSection: 2, // section que le user qui request doit remplir
         form: [
             {
                 section: 1, // section du formulaire

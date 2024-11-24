@@ -16,10 +16,13 @@
 
 <div class="main">
     <div class="header">
+        <button><a href="/">Back</a></button>
         <h1>Hackaton</h1>
         <button onclick={changeLanguage}>{langTitle}</button>
     </div>
-    {@render children()}
+    <div class="slot">
+        {@render children()}
+    </div>
 </div>
 
 
@@ -36,8 +39,13 @@
         background-color: #333;
         color: white;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 100%;
+    }
+    .slot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
