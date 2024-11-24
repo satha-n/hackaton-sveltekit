@@ -1,7 +1,13 @@
 {
-	"/(protected)": [],
+	"/(protected)": [
+		"src/routes/(protected)/+page.ts",
+		"src/routes/(protected)/+page.server.ts"
+	],
 	"/": [],
 	"/callback": [
 		"src/routes/callback/+server.ts"
+	],
+	"/(protected)/[slug]": [
+		"src/routes/(protected)/[slug]/+page.server.ts"
 	]
 }
